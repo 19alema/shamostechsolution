@@ -1,0 +1,118 @@
+.App__banner-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 2em 20px;
+}
+
+.info h4 {
+    color: var(--orange_color);
+    line-height: 2;
+    padding: 15px 0;
+    font-weight: var(--lg_weight);
+}
+.info {
+    border-radius: var(--radius);
+}
+
+.info p {
+    color: var(--grey_color);
+    font-size: 18px;
+}
+
+.main_title .h2 {
+    color: var(--secondary_color);
+    font-weight: var(--lg_weight);
+    position: relative;
+}
+
+
+
+.main_title .h2 div {
+    position: absolute;
+    top: 100%;
+    width: 200px;
+    background: var(--secondary_color);
+    height: 10px;
+    transform: translate(50%, -50%);
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .main_title .h2 {
+        font-size: 31px;
+    }
+    .App__banner-container {
+        text-align: center;
+    }
+    .banner-info {
+        display: unset;
+         grid-template-columns: 1fr;
+    }
+    .info {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 20px;
+        margin: 1em 0;
+    }
+    .banner__header {
+          display: grid;
+          place-items: center;
+          text-align: center;
+     }
+}
+
+@media all and (max-width: 1100px) and (min-width: 768px) {
+     .banner-info {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         align-items: center;
+         grid-gap: 2em;
+         margin: 2em 0;
+     }
+     .info {
+         padding: 20px;
+         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+     }
+
+    .banner__header {
+          display: grid;
+          place-items: center;
+          text-align: center;
+     }
+}
+
+@media (min-width: 1100px) {
+    .App__banner-container {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+    }
+        .main_title .h2 {
+            font-size: 35px;
+            padding: 5px 0;
+        }
+        .main_title  {
+            padding: 10px 0;
+        }
+
+        .info p {
+        font-size: 18px;
+        padding: 4px 0;
+    }
+
+    .info h4 {
+        font-size: 15px;
+        padding: 5px 0;
+    
+    }
+
+      .banner-info {
+        display: flex;
+        flex-direction: column;
+     
+    }
+}
+
+@media (max-width: 1100px)  {
+    .banner-right {
+       display: none;
+    }
+}

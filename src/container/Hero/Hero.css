@@ -1,0 +1,26 @@
+.App__hero {
+    padding: 2em 0;
+}
+
+.hero__btn {
+    padding: 1em 2em;
+    background: var(--White);
+    color: var(--secondary_color);
+    border-radius: 50px;
+    cursor: pointer;
+}
+@media (max-width:768px) {
+    .Hero__left {
+        text-align: center;
+        display: grid;
+        place-items: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .App__hero {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: space-between;
+    }
+}

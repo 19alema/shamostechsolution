@@ -1,0 +1,10 @@
+.Tech__container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    text-align: center
+}
+
+.Tech__container h4 {
+    padding: 4em 0;
+    color: var(--verydark_blue);
+}
